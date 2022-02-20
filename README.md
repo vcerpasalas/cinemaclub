@@ -65,7 +65,7 @@ Te pedimos leas los códigos de conducta de GitHub y el presente "README.md" par
 
 ## Autora
 
-* **Valeria Cerpa** - *Proyecto inicial - Reto 3*
+* **Valeria Cerpa** - *Proyecto Reto 3*
 
 Puedes mirar mis otros proyectos...
 
