@@ -76,5 +76,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Agradecimientos
 
 * Profesor Elliot Garamendi, por la enseñanza
-* Fundación Es Hoy
-* Tecsup CODIGO
+* Fundación Es Hoy y CODIGO, por la oportunidad de formarme como desarrolladora web
