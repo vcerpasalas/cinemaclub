@@ -71,7 +71,7 @@ Puedes mirar mis otros proyectos...
 
 ## Licencia
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+Este proyecto contiene una licencia de MIT License - ver el archivo adjunto en el repositorio para conocer los detalles.
 
 ## Agradecimientos
 
