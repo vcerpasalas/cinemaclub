@@ -7,6 +7,9 @@ CINEMA CLUB te mantiene actualizad@ con las últimas noticias, novedades, tenden
 El presente proyecto contiene los archivos .hmtl y .css, que fueron escritos por medio de un editor Visual Studio Code.
 Te invito a que lo puedas descargar en tu máquina local, testear y revisar. Puedes guiarte de estas notas para revisar la página.
 
+### Vistas del proyecto
+
+
 ### Notas
 
 La página es mi tercer proyecto web, correspondiente al reto 3.
