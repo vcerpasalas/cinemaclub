@@ -7,6 +7,22 @@ CINEMA CLUB te mantiene actualizad@ con las últimas noticias, novedades, tenden
 El presente proyecto contiene los archivos .hmtl y .css, que fueron escritos por medio de un editor Visual Studio Code.
 Te invito a que lo puedas descargar en tu máquina local, testear y revisar. Puedes guiarte de estas notas para revisar la página.
 
+### Vistas del proyecto
+
+Vista pantalla completa en laptop
+
+![alt text](https://github.com/vcerpasalas/cinemaclub/blob/7a16b6628fc9ba90217459c80a29ee8f77630d1f/img/vista%20completa.png)
+
+![alt text](https://github.com/vcerpasalas/cinemaclub/blob/7a16b6628fc9ba90217459c80a29ee8f77630d1f/img/vista%20completa%202.png)
+
+![alt text](https://github.com/vcerpasalas/cinemaclub/blob/7a16b6628fc9ba90217459c80a29ee8f77630d1f/img/vista%20completa%203.png)
+
+Vista responsive en mobile
+
+![alt text](https://github.com/vcerpasalas/cinemaclub/blob/7a16b6628fc9ba90217459c80a29ee8f77630d1f/img/responsive%20mobile%201.png)
+
+![alt text](https://github.com/vcerpasalas/cinemaclub/blob/7a16b6628fc9ba90217459c80a29ee8f77630d1f/img/responsive%20mobile%202.png)
+
 ### Notas
 
 La página es mi tercer proyecto web, correspondiente al reto 3.
@@ -49,16 +65,15 @@ Te pedimos leas los códigos de conducta de GitHub y el presente "README.md" par
 
 ## Autora
 
-* **Valeria Cerpa** - *Proyecto inicial - Reto 3*
+* **Valeria Cerpa** - *Proyecto Reto 3*
 
 Puedes mirar mis otros proyectos...
 
 ## Licencia
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+Este proyecto contiene una licencia de MIT License - ver el archivo adjunto en el repositorio para conocer los detalles.
 
 ## Agradecimientos
 
 * Profesor Elliot Garamendi, por la enseñanza
-* Fundación Es Hoy
-* Tecsup CODIGO
+* Fundación Es Hoy y CODIGO, por la oportunidad de formarme como desarrolladora web
