@@ -25,7 +25,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 
@@ -420,7 +420,7 @@ body {
 
 .container {
   position: relative;
-  clip-path: polygon(0 0, 80% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 80% 0, 100% 85%, 0 100%);  
 }
 
 img {
@@ -443,7 +443,7 @@ img {
 .card1>.container:after {
   background-image: linear-gradient(135deg,
       var(--card-color),
-      var(--highlight-color-1));
+      var(--highlight-color-1));  
 }
 
 .card2>.container:after {
