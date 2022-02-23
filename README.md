@@ -9,7 +9,7 @@ Te invito a que lo puedas descargar en tu máquina local, testear y revisar. Pue
 
 ### Vistas del proyecto
 
-Vista pantalla completa en laptop
+## Vista pantalla completa en laptop
 
 ![alt text](https://github.com/vcerpasalas/cinemaclub/blob/7a16b6628fc9ba90217459c80a29ee8f77630d1f/img/vista%20completa.png)
 
@@ -17,7 +17,7 @@ Vista pantalla completa en laptop
 
 ![alt text](https://github.com/vcerpasalas/cinemaclub/blob/7a16b6628fc9ba90217459c80a29ee8f77630d1f/img/vista%20completa%203.png)
 
-Vista responsive en mobile
+## Vista responsive en mobile
 
 ![alt text](https://github.com/vcerpasalas/cinemaclub/blob/7a16b6628fc9ba90217459c80a29ee8f77630d1f/img/responsive%20mobile%201.png)
 
