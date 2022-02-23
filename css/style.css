@@ -506,6 +506,7 @@ img {
   background-size: 400%;
   background-position: 0% 0%;
   color: var(--inverse-text-color);
+  text-decoration: none;
 }
 
 .unirse__button::before {
