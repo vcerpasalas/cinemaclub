@@ -23,7 +23,7 @@
   box-sizing: border-box;
 }
 
-body {
+.body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   margin: 0;
@@ -186,11 +186,11 @@ body {
   transform: scale(1.10);
 }
 
-.banner-principal__titulo {
+.banner-principal__texto-titulo {
   text-shadow: 6px 6px 5px var(--text-color);
 }
 
-.banner-principal__catalogo {
+.banner-principal__texto-catalogo {
   font-weight: bold;
   font-size: 18px;
 }
@@ -204,35 +204,35 @@ body {
   margin: 0 auto;
 }
 
-.catalogo-grid {
+.main .galeria {
+  background: var(--theme-color);
+  padding: 108px 0 54px 0;
+  padding-top: 40px;
+}
+
+.galeria-grid {
   text-align: center;
   margin-bottom: 10px;
 }
 
-.catalogo-grid__titulo {
+.galeria-grid__titulo {
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
     0px 8px 13px rgba(0, 0, 0, 0.1),
     0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
-.catalogo-grid h2 {
+.galeria-grid h2 {
   color: var(--highlight-color-1);
   font-size: 3.125rem;
   margin-bottom: 15px;
   font-weight: 500;
 }
 
-.catalogo-grid p {
+.galeria-grid p {
   color: var(--text-color2);
   font-size: 1.2rem;
   font-weight: 400;
   margin: 2.2em;
-}
-
-.main .catalogo {
-  background: var(--theme-color);
-  padding: 108px 0 54px 0;
-  padding-top: 40px;
 }
 
 .galeria-catalogo__item {
@@ -292,7 +292,7 @@ body {
   transform: scale(1.3);
 }
 
-.galeria-catalogo__cartelera {
+.cartelera-button {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -302,7 +302,7 @@ body {
   padding: 0;
 }
 
-.galeria-catalogo__cartelera-button {
+.cartelera-button__ver {
   position: relative;
   display: block;
   padding: 18px 9px;
@@ -320,8 +320,8 @@ body {
   background: var(--highlight-color-1);
 }
 
-.galeria-catalogo__cartelera-button:after,
-.galeria-catalogo__cartelera-button:before {
+.cartelera-button__ver:after,
+.cartelera-button__ver:before {
   width: 80px;
   height: 200px;
   content: '';
@@ -335,25 +335,25 @@ body {
   cursor: pointer;
 }
 
-.galeria-catalogo__cartelera-button:hover {
+.cartelera-button__ver:hover {
   box-shadow: 0 0 0.6rem 0.20rem var(--shadow2);
   text-shadow: 0 1px 1px var(--text-color);
   background: var(--highlight-color-2);
   transform: scale(1.0);
 }
 
-.galeria-catalogo__cartelera-button:hover:after,
-.galeria-catalogo__cartelera-button:hover:before {
+.cartelera-button__ver:hover:after,
+.cartelera-button__ver:hover:before {
   transform: rotate(45deg), scaleX(130%);
   background: var(--text-color2);
   transition: all ease 1s;
 }
 
-.galeria-catalogo__cartelera-button:hover:after {
+.cartelera-button__ver:hover:after {
   right: 130%;
 }
 
-.galeria-catalogo__cartelera-button:hover:before {
+.cartelera-button__ver:hover:before {
   left: 130%;
 }
 
@@ -371,12 +371,12 @@ body {
   align-items: center;
 }
 
-.main .recomiendo .contenedor .catalogo-grid {
+.main .recomiendo .contenedor .galeria-grid {
   width: 100%;
   text-align: center;
 }
 
-.main .recomiendo .contenedor .catalogo-grid h2 {
+.main .recomiendo .contenedor .galeria-grid h2 {
   margin-bottom: 0;
 }
 
@@ -408,12 +408,12 @@ body {
   box-shadow: 0 0 30px var(--text-color);
 }
 
-.container {
+.card-container {
   position: relative;
   clip-path: polygon(0 0, 80% 0, 100% 85%, 0 100%);
 }
 
-.container:after {
+.card-container:after {
   content: "";
   height: 100%;
   width: 100%;
@@ -424,19 +424,19 @@ body {
   opacity: 0.7;
 }
 
-.card1>.container:after {
+.card1>.card-container:after {
   background-image: linear-gradient(135deg,
       var(--card-color),
       var(--highlight-color-1));
 }
 
-.card2>.container:after {
+.card2>.card-container:after {
   background-image: linear-gradient(135deg,
       var(--card-color),
       var(--highlight-color-1));
 }
 
-.card3>.container:after {
+.card3>.card-container:after {
   background-image: linear-gradient(135deg,
       var(--card-color),
       var(--highlight-color-1));
@@ -448,18 +448,18 @@ img {
   border-radius: 20px 20px 0 0;
 }
 
-.cards__details {
+.card-details {
   padding: 20px 10px;
 }
 
-.cards__details>h3 {
+.card-details>h3 {
   color: var(--text-color);
   font-weight: 600;
   font-size: 18px;
   margin: 10px 0 15px 0;
 }
 
-.cards__details>p {
+.card-details>p {
   color: var(--shadow2);
   font-size: 15px;
   line-height: 30px;
@@ -488,7 +488,7 @@ img {
   border-width: 4px;
 }
 
-.galeria-catalogo__button {
+.cartelera-button__trailer {
   position: relative;
   color: var(--textColor2);
   border-radius: 26px;
@@ -499,7 +499,7 @@ img {
   text-decoration: none;
 }
 
-.galeria-catalogo__button::before {
+.cartelera-button__trailer::before {
   content: '';
   position: absolute;
   left: -2px;
@@ -516,16 +516,16 @@ img {
   transition: opacity 0.2s;
 }
 
-.galeria-catalogo__button:hover {
+.cartelera-button__trailer:hover {
   animation: gradientRotate 2s infinite;
 }
 
-.galeria-catalogo__button::before {
+.cartelera-button__trailer::before {
   opacity: 1;
   animation: gradientRotate 2s infinite;
 }
 
-.galeria-catalogo__button:active {
+.cartelera-button__trailer:active {
   color: var(--inverse-text-color);
 }
 
@@ -555,7 +555,7 @@ img {
   justify-content: space-between;
 }
 
-.main .nuestro-equipo .equipo .persona-equipo {
+.main .nuestro-equipo .equipo .equipo-persona {
   background: var(--inverse-text-color);
   padding: 40px;
   width: 100%;
@@ -565,44 +565,44 @@ img {
   align-items: center;
 }
 
-.main .nuestro-equipo .equipo .persona-equipo:first-child,
-.main .nuestro-equipo .equipo .persona-equipo:last-child {
+.main .nuestro-equipo .equipo .equipo-persona:first-child,
+.main .nuestro-equipo .equipo .equipo-persona:last-child {
   position: relative;
   top: 20px;
 }
 
-.main .nuestro-equipo .equipo .persona-equipo .foto {
+.main .nuestro-equipo .equipo .equipo-persona .foto {
   width: 50%;
   max-width: 100px;
   display: inline-block;
   margin-bottom: 10px;
 }
 
-.main .nuestro-equipo .equipo .persona-equipo .foto img {
+.main .nuestro-equipo .equipo .equipo-persona .foto img {
   width: 100%;
   border-radius: 100%;
 }
 
-.main .nuestro-equipo .equipo .persona-equipo .texto h3 {
+.main .nuestro-equipo .equipo .equipo-persona .texto h3 {
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--highlight-color-1);
 }
 
-.main .nuestro-equipo .equipo .persona-equipo .texto h4 {
+.main .nuestro-equipo .equipo .equipo-persona .texto h4 {
   color: var(--text-color);
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 15px;
 }
 
-.main .nuestro-equipo .equipo .persona-equipo .texto p {
+.main .nuestro-equipo .equipo .equipo-persona .texto p {
   color: var(--text-color3);
   font-size: 1.0rem;
   font-weight: 400;
 }
 
-.persona-equipo__contactar {
+.equipo-persona__texto-contactar {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -612,7 +612,7 @@ img {
   padding: 0;
 }
 
-.persona-equipo__contactar-button {
+.equipo-persona__texto-contactar-button {
   background-color: var(--highlight-color-1);
   border: 0.1rem solid var(--text-color);
   color: var(--inverse-text-color);
@@ -622,7 +622,7 @@ img {
   transition: all 0.1s linear;
 }
 
-.persona-equipo__contactar-button:hover {
+.equipo-persona__texto-contactar-button:hover {
   box-shadow: 0 0 0.5rem 0.25rem var(--button-color);
   color: var(--inverse-text-color);
 }
@@ -688,11 +688,11 @@ footer {
     max-width: 80%;
   }
 
-  .main .nuestro-equipo .catalogo-grid {
+  .main .nuestro-equipo .galeria-grid {
     margin-bottom: 60px;
   }
 
-  .main .nuestro-equipo .equipo .persona-equipo {
+  .main .nuestro-equipo .equipo .equipo-persona {
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -700,11 +700,11 @@ footer {
     text-align: left;
   }
 
-  .main .nuestro-equipo .equipo .persona-equipo:first-child {
+  .main .nuestro-equipo .equipo .equipo-persona:first-child {
     top: -20px;
   }
 
-  .main .nuestro-equipo .equipo .persona-equipo .foto {
+  .main .nuestro-equipo .equipo .equipo-persona .foto {
     margin-right: 20px;
   }
 }
@@ -715,7 +715,7 @@ footer {
     margin-top: 0;
   }
 
-  .main .recomiendo .contenedor .banner-principal__titulo,
+  .main .recomiendo .contenedor .banner-principal__texto-titulo,
   .main .recomiendo .contenedor {
     width: 100%;
     text-align: center;
@@ -777,15 +777,15 @@ footer {
     font-size: 4rem;
   }
 
-  .catalogo-grid h2 {
+  .galeria-grid h2 {
     font-size: 2.125rem;
   }
 
-  .main .catalogo .galeria-catalogo .pelicula {
+  .main .galeria .galeria-catalogo .pelicula {
     width: 49%;
   }
 
-  .main .nuestro-equipo .equipo .persona-equipo {
+  .main .nuestro-equipo .equipo .equipo-persona {
     flex-direction: column;
     align-items: center;
     text-align: center;
