@@ -80,8 +80,8 @@
       <div class="contenedor">
         <div class="catalogo-grid">
           <h2 class="catalogo-grid__titulo">Últimos estrenos</h2>
-          <p>📽 Entérate de las últimas tendencias de estreno 📽</p>
-          <p>¡Tenemos más de 500 películas en nuestro catálogo!</p>
+          <p class="catalogo-grid__texto">📽 Entérate de las últimas tendencias de estreno 📽</p>
+          <p class="catalogo-grid__texto">¡Tenemos más de 500 películas en nuestro catálogo!</p>
         </div>
         <article class="galeria-catalogo">
           <div class="galeria-catalogo__container">
@@ -146,7 +146,7 @@
       </div>
     </section>
 
-    <section class="mision" id="nuestra-mision">
+    <section class="recomiendo" id="nuestras-recomendaciones">
       <article class="contenedor">
         <div class="catalogo-grid">
           <h2 class="catalogo-grid__titulo">Recomendaciones</h2>
@@ -166,14 +166,14 @@
               <img src="https://viajerosapie.files.wordpress.com/2021/12/wss.jpeg" alt="las vegas">
             </div>
             <div class="cards__details">
-              <h3>West Side Story</h3>
+              <h3 class="cards__titulo">West Side Story</h3>
               <p class="cards__details-texto">Uno de los musicales más emblemáticos del cine. Ganadora de 10
                 Óscar, la película dirigida por Robert Wise y Jerome Robbins es uno de esos títulos de los que parecía
                 imposible concebir una nueva adaptación para la gran pantalla. Sin embargo, Steven Spielberg aceptó el
                 reto de actualizar esta mítica obra basada libremente en 'Romeo y Julieta'.</p>
               <ul class="galeria-catalogo__cartelera">
                 <a href="https://www.youtube.com/watch?v=tkb_cAdc0EI&ab_channel=TrailersInSpanish"
-                  class="gradient unirse__button">Ver trailer</a>
+                  class="gradient galeria-catalogo__button">Ver trailer</a>
               </ul>
             </div>
           </div>
@@ -183,14 +183,15 @@
                 alt="New York">
             </div>
             <div class="cards__details">
-              <h3>No mires arriba</h3>
-              <p>Una de las mejores y grandes películas del Año. No mires arriba combina suspenso, acción y un montón de
+              <h3 class="cards__titulo">No mires arriba</h3>
+              <p class="cards__details-texto">Una de las mejores y grandes películas del Año. No mires arriba combina
+                suspenso, acción y un montón de
                 comedia. En lo personal, me ha encantado muchísimo una auténtica pero auténtica maravilla. El reparto
                 esta espectacular en especial Leonardo DiCaprio y Jennifer Lawrence, la dirección es increíble, una
                 trama que te atrapa de principio a fin y la mezcla del humor y drama es fascinante. </p>
               <ul class="galeria-catalogo__cartelera">
                 <a href="https://www.youtube.com/watch?v=IE-HElQnjcU&ab_channel=NetflixDoblado"
-                  class="gradient unirse__button">Ver trailer</a>
+                  class="gradient galeria-catalogo__button">Ver trailer</a>
               </ul>
             </div>
           </div>
@@ -201,20 +202,21 @@
                 alt="Singapore">
             </div>
             <div class="cards__details">
-              <h3>Marry me</h3>
-              <p>Es un cuento de hadas sintético para la era de la transmisión en vivo y el oversharing monetizado, que
+              <h3 class="cards__titulo">Marry me</h3>
+              <p class="cards__details-texto">Es un cuento de hadas sintético para la era de la transmisión en vivo y el
+                oversharing monetizado, que
                 une a una celebridad superestrella, la reina del pop Kat Valdez (Jennifer Lopez), con Charlie (Owen
                 Wilson), un profesor de matemáticas divorciado. Se juntan después de que Kat, a punto de casarse con su
                 novio frente a 20 millones de espectadores, descubre que él la ha engañado.</p>
             </div>
             <ul class="galeria-catalogo__cartelera">
               <a href="https://www.youtube.com/watch?v=8hXboMXWavE&ab_channel=UniversalSpain"
-                class="gradient unirse__button">Ver trailer</a>
+                class="gradient galeria-catalogo__button">Ver trailer</a>
             </ul>
           </div>
         </div>
         <ul class="galeria-catalogo__cartelera">
-          <li class="gradient unirse__button">Quiero ver más</li>
+          <li class="gradient galeria-catalogo__button">Quiero ver más</li>
         </ul>
       </article>
     </section>
@@ -231,13 +233,13 @@
             <div class="foto">
               <img src="img/foto1.jpg" alt="Persona">
             </div>
-            <div class="texto">
+            <div class="persona-equipo__texto">
               <h3>Maya Santiago</h3>
               <h4>CEO y fundadora</h4>
               <p>¡Hola! Me encargo de liderar los proyectos de trabajo de Cinema Club. Encontrarás en nuestra
                 comunidad entretenimiento, pero sobre todo... la información que buscas.</p>
-              <ul class="contactar-list">
-                <li class="contactar__button">Contáctame</li>
+              <ul class="persona-equipo__contactar">
+                <li class="persona-equipo__contactar-button">Contáctame</li>
               </ul>
             </div>
           </div>
@@ -245,13 +247,13 @@
             <div class="foto">
               <img src="img/foto2.jpg" alt="Persona">
             </div>
-            <div class="texto">
+            <div class="persona-equipo__texto">
               <h3>Adrián Ramírez</h3>
               <h4>Director de contenido</h4>
               <p>Bienvenid@ a Cinema CLub. Mi trabajo es velar por contenidos de calidad y mantenerte actualizad@ de las
                 últimas novedades de tus películas favoritas.</p>
-              <ul class="contactar-list">
-                <li class="contactar__button">Contáctame</li>
+              <ul class="persona-equipo__contactar">
+                <li class="persona-equipo__contactar-button">Contáctame</li>
               </ul>
             </div>
           </div>
@@ -259,13 +261,13 @@
             <div class="foto">
               <img src="img/foto3.jpg" alt="Persona">
             </div>
-            <div class="texto">
+            <div class="persona-equipo__texto">
               <h3>José Manuel Pérez</h3>
               <h4>Director de Tecnología</h4>
               <p>Hola clubler@. Me encargo de que tu experiencia en la
                 comunidad sea la más memorable. Actualizamos nuestro contenido ¡todos los días!</p>
-              <ul class="contactar-list">
-                <li class="contactar__button">Contáctame</li>
+              <ul class="persona-equipo__contactar">
+                <li class="persona-equipo__contactar-button">Contáctame</li>
               </ul>
             </div>
           </div>

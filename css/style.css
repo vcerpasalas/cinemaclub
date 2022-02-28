@@ -76,6 +76,10 @@ body {
   transition: all 0.5s;
 }
 
+.header-nav__menu-checkbox {
+  display: none;
+}
+
 .header-nav__link-list {
   position: fixed;
   display: flex;
@@ -95,6 +99,12 @@ body {
   transition: all 0.5s;
 }
 
+.header-nav__menu-checkbox:checked+.header-nav__link-list {
+  left: 0;
+  background-color: var(--header);
+  opacity: 0.9;
+}
+
 .header-nav__link-item {
   list-style: none;
 }
@@ -106,16 +116,6 @@ body {
   color: var(--highlight-color-1);
   transition: all 0.25s;
   font-weight: bold;
-}
-
-.header-nav__menu-checkbox {
-  display: none;
-}
-
-.header-nav__menu-checkbox:checked+.header-nav__link-list {
-  left: 0;
-  background-color: var(--header);
-  opacity: 0.9;
 }
 
 .header-nav__link:hover {
@@ -196,7 +196,7 @@ body {
 }
 
 /* Últimos estrenos */
-/* Galería Grid de películas Responsive */
+/* Galería Grid de películas responsive */
 
 .contenedor {
   width: 90%;
@@ -213,17 +213,6 @@ body {
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
     0px 8px 13px rgba(0, 0, 0, 0.1),
     0px 18px 23px rgba(0, 0, 0, 0.1);
-}
-
-.titulos-seccion__texto {
-  font-family: sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--inverse-text-color);
-  background: var(--highlight-color-3);
-  margin: 0 0 25px;
-  overflow: hidden;
-  padding: 20px;
 }
 
 .catalogo-grid h2 {
@@ -371,32 +360,32 @@ body {
 
 /* Nuestras Recomendaciones */
 
-.main .mision {
+.main .recomiendo {
   background: var(--theme-color);
 }
 
-.main .mision .contenedor {
+.main .recomiendo .contenedor {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.main .mision .contenedor .catalogo-grid {
+.main .recomiendo .contenedor .catalogo-grid {
   width: 100%;
   text-align: center;
 }
 
-.main .mision .contenedor .catalogo-grid h2 {
+.main .recomiendo .contenedor .catalogo-grid h2 {
   margin-bottom: 0;
 }
 
-.main .mision {
+.main .recomiendo {
   width: 100%;
   text-align: left;
 }
 
-.main .mision p {
+.main .recomiendo p {
   color: var(--text-color);
   font-size: 1.0rem;
   font-weight: 300;
@@ -421,13 +410,7 @@ body {
 
 .container {
   position: relative;
-  clip-path: polygon(0 0, 80% 0, 100% 85%, 0 100%);  
-}
-
-img {
-  width: 100%;
-  display: block;
-  border-radius: 20px 20px 0 0;
+  clip-path: polygon(0 0, 80% 0, 100% 85%, 0 100%);
 }
 
 .container:after {
@@ -444,7 +427,7 @@ img {
 .card1>.container:after {
   background-image: linear-gradient(135deg,
       var(--card-color),
-      var(--highlight-color-1));  
+      var(--highlight-color-1));
 }
 
 .card2>.container:after {
@@ -457,6 +440,12 @@ img {
   background-image: linear-gradient(135deg,
       var(--card-color),
       var(--highlight-color-1));
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
 }
 
 .cards__details {
@@ -499,7 +488,7 @@ img {
   border-width: 4px;
 }
 
-.unirse__button {
+.galeria-catalogo__button {
   position: relative;
   color: var(--textColor2);
   border-radius: 26px;
@@ -510,7 +499,7 @@ img {
   text-decoration: none;
 }
 
-.unirse__button::before {
+.galeria-catalogo__button::before {
   content: '';
   position: absolute;
   left: -2px;
@@ -527,16 +516,16 @@ img {
   transition: opacity 0.2s;
 }
 
-.unirse__button:hover {
+.galeria-catalogo__button:hover {
   animation: gradientRotate 2s infinite;
 }
 
-.unirse__button::before {
+.galeria-catalogo__button::before {
   opacity: 1;
   animation: gradientRotate 2s infinite;
 }
 
-.unirse__button:active {
+.galeria-catalogo__button:active {
   color: var(--inverse-text-color);
 }
 
@@ -613,7 +602,7 @@ img {
   font-weight: 400;
 }
 
-.contactar-list {
+.persona-equipo__contactar {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -623,7 +612,7 @@ img {
   padding: 0;
 }
 
-.contactar__button {
+.persona-equipo__contactar-button {
   background-color: var(--highlight-color-1);
   border: 0.1rem solid var(--text-color);
   color: var(--inverse-text-color);
@@ -633,7 +622,7 @@ img {
   transition: all 0.1s linear;
 }
 
-.contactar__button:hover {
+.persona-equipo__contactar-button:hover {
   box-shadow: 0 0 0.5rem 0.25rem var(--button-color);
   color: var(--inverse-text-color);
 }
@@ -686,16 +675,18 @@ footer {
   transform: scale(1.25);
 }
 
-.copyright {
-  margin-top: 15px;
-  text-align: center;
-  font-size: 15px;
-}
-
 
 /* ----- Media Queries ----- */
 
 @media screen and (max-width:1040px) {
+
+  .cards {
+    padding-left: 8px;
+  }
+
+  .card.card1.card2.card3 {
+    max-width: 80%;
+  }
 
   .main .nuestro-equipo .catalogo-grid {
     margin-bottom: 60px;
@@ -716,27 +707,16 @@ footer {
   .main .nuestro-equipo .equipo .persona-equipo .foto {
     margin-right: 20px;
   }
-
-  .cards {
-    padding-left: 8px;
-  }
-
-  .card.card1.card2.card3 {
-    max-width: 80%;
-  }
-
 }
 
 @media screen and (max-width: 900px) {
 
-  /*Main*/
   .main {
     margin-top: 0;
   }
 
-  /*Recomendaciones*/
-  .main .mision .contenedor .titulo-seccion,
-  .main .mision .contenedor {
+  .main .recomiendo .contenedor .banner-principal__titulo,
+  .main .recomiendo .contenedor {
     width: 100%;
     text-align: center;
   }
@@ -745,7 +725,6 @@ footer {
 
 @media (min-width: 854px) {
 
-  /*Menu*/
   .header-nav__menu-icon {
     display: none;
   }
@@ -762,6 +741,10 @@ footer {
     color: var(--highlight-color-1);
   }
 
+  .cards {
+    padding-left: 80px;
+  }
+
   .footer-nav {
     padding: 0;
     max-width: 1024px;
@@ -776,11 +759,8 @@ footer {
     width: 2rem;
   }
 
-  .cards {
-    padding-left: 80px;
-  }
-
   @media (min-width: 600px) {
+
     .wide {
       grid-column: span 2;
     }
@@ -793,12 +773,10 @@ footer {
 
 @media screen and (max-width:550px) {
 
-  /*Banner principal*/
   .main .banner-principal .banner-principal__texto h1 {
     font-size: 4rem;
   }
 
-  /*Catálogo*/
   .catalogo-grid h2 {
     font-size: 2.125rem;
   }
@@ -807,7 +785,6 @@ footer {
     width: 49%;
   }
 
-  /*Nuestro equipo*/
   .main .nuestro-equipo .equipo .persona-equipo {
     flex-direction: column;
     align-items: center;
